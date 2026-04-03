@@ -1,0 +1,204 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Head Office Admin",
+      "email": "admin@fms.com",
+      "role": "admin",
+      "branchId": null
+    },
+    {
+      "id": 2,
+      "name": "Lahore Manager",
+      "email": "branch@fms.com",
+      "role": "branch",
+      "branchId": 1
+    },
+    {
+      "id": 3,
+      "name": "Ayesha Khan",
+      "email": "user@fms.com",
+      "role": "user",
+      "branchId": null
+    },
+    {
+      "name": "Karachi Branch Manager",
+      "email": "karachibranch@gmail.com",
+      "role": "branch",
+      "branchId": 2,
+      "id": 4
+    },
+    {
+      "name": "Abubakar",
+      "email": "abubakarrevolix@gmail.com",
+      "role": "user",
+      "branchId": null,
+      "id": 5
+    },
+    {
+      "name": "Abubakar",
+      "email": "abubakarrevolix@gmail.com",
+      "role": "user",
+      "branchId": null,
+      "id": 6
+    },
+    {
+      "name": "Abubakar",
+      "email": "abubakarcode@gmail.com",
+      "role": "user",
+      "branchId": null,
+      "id": 7
+    },
+    {
+      "name": "anas",
+      "email": "anas12@gmail.com",
+      "role": "user",
+      "branchId": null,
+      "id": 8
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "name": "Lahore Branch",
+      "location": "Lahore",
+      "managerEmail": "branch@fms.com",
+      "managerId": "branch_lhr",
+      "managerPassword": "branch123",
+      "inventory": {
+        "chicken": 50,
+        "beef": 30,
+        "mutton": 20,
+        "bread": 100,
+        "fries": 80
+      },
+      "employees": [
+        {
+          "id": 1,
+          "name": "Ali",
+          "contact": "0300-1234567",
+          "email": "ali@branch.com"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "user": "Ayesha",
+          "userEmail": "user@fms.com",
+          "rating": 5,
+          "review": "Great food and service!",
+          "createdAt": "2026-03-29T10:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-29T09:00:00.000Z"
+    },
+    {
+      "name": "Karachi Branch",
+      "location": "Karachi",
+      "managerEmail": "karachibranch@gmail.com",
+      "managerId": "branch_kar",
+      "inventory": {
+        "chicken": 30,
+        "beef": 30,
+        "mutton": 30,
+        "bread": 60,
+        "fries": 60
+      },
+      "createdAt": "2026-03-29T18:34:15.862Z",
+      "id": 2,
+      "reviews": [
+        {
+          "id": 2,
+          "user": "Abubakar",
+          "userEmail": "abubakarcode@gmail.com",
+          "rating": 5,
+          "review": "ashgdasd",
+          "createdAt": "2026-03-30T17:43:16.717Z"
+        },
+        {
+          "id": 1,
+          "user": "Abubakar",
+          "userEmail": "abubakarrevolix@gmail.com",
+          "rating": 5,
+          "review": "Nice",
+          "createdAt": "2026-03-29T18:40:25.008Z"
+        }
+      ],
+      "employees": [
+        {
+          "id": 1,
+          "name": "Anas",
+          "email": "anas@gmail.com",
+          "contact": "03002412257"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Zinger Burger",
+      "price": 450
+    },
+    {
+      "name": "Pizza",
+      "price": 999,
+      "category": "Pizza",
+      "id": 2
+    },
+    {
+      "name": "Burger",
+      "price": 100,
+      "category": "Burger",
+      "id": 3
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "discount": 20
+    },
+    {
+      "discount": 30,
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 3,
+      "name": "Ayesha Khan",
+      "contact": "0300-2233445",
+      "email": "user@fms.com",
+      "product": "Zinger Burger",
+      "branchId": 1,
+      "quantity": 2,
+      "status": "pending",
+      "createdAt": "2026-03-29T10:05:00.000Z"
+    },
+    {
+      "userId": 5,
+      "name": "Abubakar",
+      "contact": "03188790002",
+      "email": "abubakarrevolix@gmail.com",
+      "product": "Pizza",
+      "branchId": 2,
+      "quantity": 1,
+      "status": "pending",
+      "createdAt": "2026-03-29T18:39:57.997Z",
+      "id": 2
+    },
+    {
+      "userId": 7,
+      "name": "Abubakar",
+      "contact": "7832846238",
+      "email": "abubakarcode@gmail.com",
+      "product": "Pizza",
+      "branchId": 2,
+      "quantity": 1,
+      "status": "pending",
+      "createdAt": "2026-03-30T17:43:05.903Z",
+      "id": 3
+    }
+  ]
+}
